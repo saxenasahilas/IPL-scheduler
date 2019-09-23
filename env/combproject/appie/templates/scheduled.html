@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<title>Event</title>
+</head>
+<body style="text-align:center;">
+<table border="1" style="width:80%;margin:0 auto;">
+	<tr>
+		<th>Count</th>
+		<th>Date</th>
+		<th>Matches</th>
+		<th>City</th>
+	</tr>
+	{% for s in sc %}
+	<tr>
+		<td>{{forloop.counter}}</td>
+		<td>{{s.date}}</td>
+		<td>{{s.matches}}</td>
+		<td>{{s.city}}</td>
+	</tr>
+
+	{% endfor %}
+
+</table>
+
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<title>Events</title>
+</head>
+<body style="text-align:center;">
+<form action="{% url 'createschedule' %}" method="post">
+	<h1 style="font-family:forte;font-size:50px;text-align:center;">TOURNAMENT SCHEDULE</h1>
+		<h2>Date</h2>
+	{% csrf_token %}
+	<input type="date" name ="yymmdd"/>
+	<input type="submit" value="Schedule"/>
+</form>
+</body>
+</html>
